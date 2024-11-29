@@ -367,7 +367,7 @@ class GameServer:
 
     def request_play_again(self):
         """向所有玩家請求是否再玩一局"""
-        self.broadcast("遊戲結束，選擇是否再來一局。")
+        self.broadcast("遊戲結束，是否再來一局？請回應 'playagain yes' 或 'playagain no'。")
 
     def check_play_again(self):
         """檢查所有玩家是否都同意再玩一局"""
